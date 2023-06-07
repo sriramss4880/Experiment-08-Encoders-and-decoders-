@@ -55,42 +55,77 @@ D7 = X Y Z
 ## Figure -04 8 to 3 Decoder implementation 
 
 ### Procedure
-/* write all the steps invloved */
+### STEP 1:
+create module encoder and decoder.
+
+### STEP 2:
+Get inputs and outputs for encoders and decoders.
+
+### STEP 3:
+perform or operation for encoder and and logic for decoders.
+
+### STEP 4:
+perform RTL LOGIC and get waveform.
 
 
 
-### PROGRAM 
+### PROGRAM (ENCODERS)
 /*
-Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Program for Endocers and verify its truth table in quartus using Verilog programming.
+Developed by: KAVIYA SHREE S
+RegisterNumber:  212222110018
 */
-
-
-
-
-
+module enc(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a,b,c;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
 
 ### RTL LOGIC  
 
-
-
-
-
-
+![image](https://github.com/kaviya2839/Experiment-08-Encoders-and-decoders-/assets/120553351/30a4a545-5ae5-4e3d-a28b-dd32c7148b99)
 
 
 ### TIMING DIGRAMS  
 
-
-
+![image](https://github.com/kaviya2839/Experiment-08-Encoders-and-decoders-/assets/120553351/8865f77b-0611-4d49-a38b-338e0acc6faa)
 
 
 ### TRUTH TABLE 
 
+![image](https://github.com/kaviya2839/Experiment-08-Encoders-and-decoders-/assets/120553351/a1e53025-3871-470c-847d-930985afa0de)
 
 
+### PROGRAM (DECODERS)
+/*
+Program for Decoders  and verify its truth table in quartus using Verilog programming.
+Developed by: KAVIYA SHREE S
+RegisterNumber:  212222110018
+*/
+module enc(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+input a,b,c;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
 
+endmodule 
 
+### RTL LOGIC
+![image](https://github.com/kaviya2839/Experiment-08-Encoders-and-decoders-/assets/120553351/fbf521d9-36f3-44ee-8493-93d2441b3310)
+
+### TIMING DIGRAMS 
+![image](https://github.com/kaviya2839/Experiment-08-Encoders-and-decoders-/assets/120553351/7bfeca1f-c8a3-47f6-9992-7f8cc8ddea98)
+
+### TRUTH TABLE 
+![image](https://github.com/kaviya2839/Experiment-08-Encoders-and-decoders-/assets/120553351/93ccb3cd-a2fe-48d2-aef2-f16c7a8f86e9)
 
 ### RESULTS 
+Thus the program to desing encoder and decoder is done.
