@@ -101,10 +101,11 @@ endmodule
 
 
 ### PROGRAM (DECODERS)
+```
 /*
 Program for Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: KAVIYA SHREE S
-RegisterNumber:  212222110018
+Developed by: SRIRAM S S
+RegisterNumber:  212222230150
 */
 module enc(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
 input a,b,c;
@@ -119,7 +120,7 @@ assign d6 = (a&b&~c);
 assign d7 = (a&b&c);
 
 endmodule 
-
+```
 ### RTL LOGIC
 ![image](https://github.com/kaviya2839/Experiment-08-Encoders-and-decoders-/assets/120553351/fbf521d9-36f3-44ee-8493-93d2441b3310)
 
